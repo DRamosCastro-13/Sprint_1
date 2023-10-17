@@ -1,0 +1,257 @@
+:root{
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a, a:hover, a:visited, a:active {
+    color: inherit;
+    text-decoration: none;
+   }
+
+header{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    padding: 0.1rem;
+    color: rgb(238, 188, 127);
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: flex-end;
+    
+}
+
+.nav-superior a{
+    box-shadow: rgba(126, 126, 126, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(112, 110, 110, 0.07) 0px 16px 32px, rgba(156, 156, 156, 0.07) 0px 32px 64px;
+    text-size-adjust: 20px;
+    border-radius: 7px;
+    width: 2rem;
+    margin-left: 1rem;
+    padding: 0.4rem;
+
+   }
+
+
+main{
+    min-height: 100vh;
+    text-align: center;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.foot-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    padding:  1rem;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,0.528470763305322) 50%, rgba(252,176,69,1) 100%);  
+}
+
+/*Home Page-Beginning*/
+
+.titles-home1{
+    color: rgb(255, 201, 76); 
+    padding-top: 4rem;
+    font-weight: bold;
+    font-size: 2.5rem;  
+}
+
+
+.titles-home2{
+    color: rgb(240, 104, 80);
+    padding: 0.4rem;
+    margin-bottom: 0.3rem; 
+    
+}
+
+.banner{
+    background-image: url(../images/imagebanner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 25vh;
+    width: 100%;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    margin-top: 1rem;
+    
+}
+
+.content-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60rem;
+    padding-left: 15rem;
+    
+}
+
+.home-text{
+    display: flex;
+    justify-content: center;
+    color: rgb(232, 204, 255);
+    text-align:center;
+    margin: 2rem;
+    line-height: 2rem;
+
+}
+.photo_1{
+    display: flex;
+    justify-content: center;
+    height: 15rem;
+    width: 15rem;
+    object-fit:cover;
+    margin: 2rem;
+    border-radius: 7px;
+   
+}
+
+/*End of Home page
+
+        About Us Page - Beginning*/
+
+        .au-titles1{
+            color: rgb(255, 201, 76);
+            display: block;
+            padding-top: 4rem;
+            box-sizing: border-box; 
+            font-weight: bold;
+            font-size: 2rem;   
+        }
+        
+        .au-titles2{
+            color: rgb(240, 104, 80);
+            display: block;
+            padding: 0.4rem;
+            box-sizing: border-box; 
+            margin-bottom: 0.3rem; 
+        }
+
+        .au-content1 p{
+            display: inline-block;
+            width: 22rem;
+            vertical-align:top;
+            padding: 3.5rem;
+            margin:1.5rem;
+            margin-left: 2rem;
+            color: rgb(232, 204, 255);
+            text-align: left;         
+            line-height: 2rem;  
+        }        
+
+        .photo_2{
+            height: 13rem;
+            width: 13rem;
+            object-fit:cover;
+            border-radius: 7px;
+            display: inline-block;
+            margin: 1.5rem;
+            
+        }
+
+        .photo_3{
+            height: 13rem;
+            width: 13rem;
+            object-fit:cover;
+            border-radius: 7px;
+            display: inline-block;
+            margin: 1.5rem;
+        }
+
+        .photo_4{
+            height: 13rem;
+            width: 13rem;
+            object-fit:cover;
+            border-radius: 7px;
+            display: inline-block;
+            margin: 1.5rem;
+            
+        }
+
+        .text_photo4{
+            margin-bottom: 3rem;         
+        }
+
+/*End of About Us Page
+
+        Contact Page - Beginning*/
+        
+        .c-titles1{
+            color: rgb(255, 201, 76);
+            display: block;
+            padding-top: 4rem;
+            box-sizing: border-box; 
+            font-weight: bold;
+            font-size: 2rem;   
+        }
+        
+        .c-titles2{
+            color: rgb(240, 104, 80);
+            display: block;
+            padding: 0.4rem;
+            box-sizing: border-box; 
+            margin-bottom: 0.3rem; 
+        }
+        
+        .photo_5{
+            height: 20rem;
+            width: 40rem;
+            object-fit:cover;
+            border-radius: 7px;
+            display: block;
+            margin: 0rem auto;
+            margin-top: 1.5rem;          
+            
+        }
+
+        .contact_content1 p{
+            color: rgb(232, 204, 255);
+            display: block;
+            width: 40rem;
+            text-align: justify;
+            margin: 0rem auto;
+            margin-top: 1.5rem;
+             
+        }
+
+        .contact_info{
+            color: rgb(232, 204, 255);
+            width: 40rem;
+            margin: 0rem auto;
+            margin-top: 1.5rem;
+            padding-bottom: 3rem;
+          
+        }
+
+        .mail{
+            float:left;
+
+        }
+
+        .phone{
+            float: right;         
+        }

@@ -12,6 +12,7 @@
     text-decoration:none;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 a, a:hover, a:visited, a:active {
     color: inherit;
     text-decoration: none;
@@ -23,7 +24,8 @@ a, a:hover, a:visited, a:active {
     padding: 0.1rem;
     color: rgb(238, 188, 127);
     overflow: auto;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     
 }
 
@@ -56,12 +58,22 @@ main{
     
 }
 
+.foot-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    width: 100%;
+    padding:  1rem;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,0.528470763305322) 50%, rgba(252,176,69,1) 100%);  
+}
 /*Home Page-Beginning*/
 
 .titles-home1{
     color: rgb(255, 201, 76);
     display: block;
-    padding: 0.5rem;
+    padding-top: 4rem;
     box-sizing: border-box;
     font-weight: bold;
     font-size: 2.5rem;  
@@ -78,7 +90,7 @@ main{
 }
 
 .banner{
-    background-image: url(./assets/images-Sprint1/imagebanner.jpg);
+    background-image: url(../images/imagebanner.jpg);
     background-position: center;
     background-size: cover;
     height: 25vh;
@@ -89,51 +101,34 @@ main{
     
 }
 
-.content-home p{
-    display: inline-block;
-    width: 12rem;
-    vertical-align: top;
-    align-content: center;
-    margin-bottom: 6rem;
+.content-home {
+    display: flex;
+    width: 60rem;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .home-text{
+    display: flex;
+    justify-content: center;
     color: rgb(232, 204, 255);
     text-align:center;
     margin: 2rem;
-    display: inline-block;
     line-height: 2rem;
 
 }
 .photo_1{
+    display: flex;
+    justify-content: center;
     height: 15rem;
     width: 15rem;
     object-fit:cover;
     margin: 2rem;
-    margin-right: 6rem;
-    display: inline-block;
     border-radius: 7px;
    
 }
 
-.foot-text{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 1rem;
-    color: white;
-    text-align: center;
-    background: rgb(131,58,180);
-    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,0.528470763305322) 50%, rgba(252,176,69,1) 100%);  
-}
-
-h4{
-    display: inline-block;
-    text-align: center;
-    text-wrap: 2rem;
-    vertical-align: middle;
-    color: black;
-}
 
 /*End of Home page
 
@@ -142,7 +137,7 @@ h4{
         .au-titles1{
             color: rgb(255, 201, 76);
             display: block;
-            padding: 0.5rem;
+            padding-top: 4rem;
             box-sizing: border-box; 
             font-weight: bold;
             font-size: 2rem;   
@@ -194,12 +189,11 @@ h4{
             border-radius: 7px;
             display: inline-block;
             margin: 1.5rem;
-            margin-bottom: 6rem;
             
         }
 
         .text_photo4{
-            margin-bottom: 6rem;         
+            margin-bottom: 3rem;         
         }
 
 /*End of About Us Page
@@ -209,7 +203,7 @@ h4{
         .c-titles1{
             color: rgb(255, 201, 76);
             display: block;
-            padding: 0.5rem;
+            padding-top: 4rem;
             box-sizing: border-box; 
             font-weight: bold;
             font-size: 2rem;   
@@ -249,7 +243,7 @@ h4{
             width: 40rem;
             margin: 0rem auto;
             margin-top: 1.5rem;
-            padding-bottom: 6rem;
+            padding-bottom: 3rem;
           
         }
 
