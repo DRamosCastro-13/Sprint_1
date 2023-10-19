@@ -298,13 +298,11 @@ header{
             padding-bottom: 1rem;
         }
 
-        ul{
-            width: fit-content;
-            justify-content: center;
-            align-items: center;
+        ol{
             line-height: 1.5rem;
-            list-style-type: none;
-            
+            text-align: left;
+            width: 15rem;
+            align-items: center;
         }
 
         .stars{
@@ -313,4 +311,64 @@ header{
             object-fit: cover;
         }
 
+/*End of Ratings Page
+
+        Hire - Beginning*/    
         
+        .main-hire{
+            min-height: 93vh;
+            text-align: center;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .map-title{
+            color: rgb(232, 204, 255);
+        }
+
+        .content-hire{
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            margin-top: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .form{
+            display: flex;
+            flex-direction: column;
+            color: white;
+            text-align: left;
+        }
+        
+        label{
+            width: 20rem;
+            text-align: left;
+        }
+
+        textarea{
+            width: 20rem;
+            height: 5rem;
+            border-radius: 7px;
+        }
+
+        fieldset{
+            align-items: left;
+            border: none;  
+        }
+
+        input,select{
+            margin-bottom: 1rem;
+            margin-top: 0.4rem;
+            padding: 0.2rem;
+            border-radius: 7px;
+        }
+
+        .tw{
+           width: 20rem; 
+        }
+
+        
+    
