@@ -51,15 +51,20 @@ header{
 
    }
 
-
-main{
-    min-height: 100vh;
-    text-align: center;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.pages-titles1{
+    color: rgb(255, 201, 76);
+    margin-top: 4rem;
+    box-sizing: border-box; 
+    font-weight: bold;
+    font-size: 2rem;   
 }
+
+.pages-titles2{
+    color: rgb(240, 104, 80);
+    box-sizing: border-box; 
+    margin-bottom: 0.3rem; 
+}
+
 
 .foot-text{
     display: flex;
@@ -73,6 +78,16 @@ main{
 }
 
 /*Home Page-Beginning*/
+
+.main-home{
+    min-height: 100vh;
+    text-align: center;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 
 .titles-home1{
     color: rgb(255, 201, 76); 
@@ -91,12 +106,12 @@ main{
 
 .banner{
     background-image: url(../images/imagebanner.jpg);
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 25vh;
     width: 100%;
     object-fit: contain;
-    background-repeat: no-repeat;
     margin-top: 1rem;
     
 }
@@ -111,17 +126,13 @@ main{
 }
 
 .home-text{
-    display: flex;
-    justify-content: center;
     color: rgb(232, 204, 255);
     text-align:center;
     margin: 2rem;
     line-height: 2rem;
 
 }
-.photo_1{
-    display: flex;
-    justify-content: center;
+.photo_1{ 
     height: 15rem;
     width: 15rem;
     object-fit:cover;
@@ -134,87 +145,51 @@ main{
 
         About Us Page - Beginning*/
 
-        .au-titles1{
-            color: rgb(255, 201, 76);
-            display: block;
-            padding-top: 4rem;
-            box-sizing: border-box; 
-            font-weight: bold;
-            font-size: 2rem;   
-        }
-        
-        .au-titles2{
-            color: rgb(240, 104, 80);
-            display: block;
-            padding: 0.4rem;
-            box-sizing: border-box; 
-            margin-bottom: 0.3rem; 
+        .main-au{
+            min-height: 100vh;
+            text-align: center;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
+        .cards-au{
+            display: flex;
+            justify-content: center;
+        }
+        
+        .au-content1 img{
+            width: 13rem;
+            height: 13rem;
+            margin:1.5rem;
+            object-fit: cover;
+            border-radius: 7px;
+        }        
+
+
         .au-content1 p{
-            display: inline-block;
             width: 22rem;
-            vertical-align:top;
             padding: 3.5rem;
             margin:1.5rem;
             margin-left: 2rem;
-            color: rgb(232, 204, 255);
-            text-align: left;         
+            color: rgb(232, 204, 255);        
             line-height: 2rem;  
-        }        
-
-        .photo_2{
-            height: 13rem;
-            width: 13rem;
-            object-fit:cover;
-            border-radius: 7px;
-            display: inline-block;
-            margin: 1.5rem;
-            
-        }
-
-        .photo_3{
-            height: 13rem;
-            width: 13rem;
-            object-fit:cover;
-            border-radius: 7px;
-            display: inline-block;
-            margin: 1.5rem;
-        }
-
-        .photo_4{
-            height: 13rem;
-            width: 13rem;
-            object-fit:cover;
-            border-radius: 7px;
-            display: inline-block;
-            margin: 1.5rem;
-            
-        }
-
-        .text_photo4{
-            margin-bottom: 3rem;         
-        }
-
+        }      
+        
+        
+       
 /*End of About Us Page
 
         Contact Page - Beginning*/
-        
-        .c-titles1{
-            color: rgb(255, 201, 76);
-            display: block;
-            padding-top: 4rem;
-            box-sizing: border-box; 
-            font-weight: bold;
-            font-size: 2rem;   
-        }
-        
-        .c-titles2{
-            color: rgb(240, 104, 80);
-            display: block;
-            padding: 0.4rem;
-            box-sizing: border-box; 
-            margin-bottom: 0.3rem; 
+       
+        .main-contact{
+            min-height: 100vh;
+            text-align: center;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         
         .photo_5{
@@ -222,7 +197,6 @@ main{
             width: 40rem;
             object-fit:cover;
             border-radius: 7px;
-            display: block;
             margin: 0rem auto;
             margin-top: 1.5rem;          
             
@@ -230,7 +204,6 @@ main{
 
         .contact_content1 p{
             color: rgb(232, 204, 255);
-            display: block;
             width: 40rem;
             text-align: justify;
             margin: 0rem auto;
@@ -255,3 +228,89 @@ main{
         .phone{
             float: right;         
         }
+
+/*End of Contact Page
+
+        Services - Beginning*/
+
+        .main-services{
+            min-height: 93vh;
+            text-align: center;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        table,tr,th,td{
+            color:  rgb(232, 204, 255);
+            border:1px solid rgb(255, 201, 76);
+            border-collapse: collapse;
+            width: 40rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            
+        }
+
+        th{
+            height: 6rem;
+            background-color: rgb(255, 201, 76);
+            color: black;
+            border:1px solid black;
+        }
+
+        td{
+            height: 4rem;
+            
+        }
+
+        tr:hover {
+            background-color: rgb(202, 69, 46);
+        }
+
+/*End of Services Page
+
+        Ratings - Beginning*/
+
+        .main-r{
+            min-height: 100vh;
+            text-align: center;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+       
+
+        .rating-1{
+            color: rgb(232, 204, 255);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 40rem;
+            box-shadow: rgba(255, 255, 255, 0.1) 0px 10px 15px -3px, rgba(174, 171, 171, 0.05) 0px 4px 6px -2px;
+            
+        }
+
+        h5{
+            font-size: 23px;
+            padding-bottom: 1rem;
+        }
+
+        ul{
+            width: fit-content;
+            justify-content: center;
+            align-items: center;
+            line-height: 1.5rem;
+            list-style-type: none;
+            
+        }
+
+        .stars{
+            width: 10rem;
+            height: 3rem;
+            object-fit: cover;
+        }
+
+        
