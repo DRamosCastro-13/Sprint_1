@@ -28,12 +28,13 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 8vh;
 
 }
 
 .logo{
-    width: 50px;
-    height: 50px;
+    width: 3rem;
+    height: 3rem;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -43,12 +44,10 @@ header{
 
 .nav-superior a{
     box-shadow: rgba(126, 126, 126, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(112, 110, 110, 0.07) 0px 16px 32px, rgba(156, 156, 156, 0.07) 0px 32px 64px;
-    text-size-adjust: 20px;
     border-radius: 7px;
     width: 2rem;
     margin-left: 1rem;
     padding: 0.4rem;
-
    }
 
 .pages-titles1{
@@ -65,13 +64,13 @@ header{
     margin-bottom: 0.3rem; 
 }
 
-
 .foot-text{
     display: flex;
     align-items: center;
     justify-content: center;
     bottom: 0;
     width: 100%;
+    height: 8vh;
     padding:  1rem;
     background: rgb(131,58,180);
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,0.528470763305322) 50%, rgba(252,176,69,1) 100%);  
@@ -80,7 +79,7 @@ header{
 /*Home Page-Beginning*/
 
 .main-home{
-    min-height: 100vh;
+    min-height: 94vh;
     text-align: center;
     background-color: black;
     display: flex;
@@ -88,14 +87,12 @@ header{
     justify-content: center;
 }
 
-
 .titles-home1{
     color: rgb(255, 201, 76); 
     padding-top: 4rem;
     font-weight: bold;
     font-size: 2.5rem;  
 }
-
 
 .titles-home2{
     color: rgb(240, 104, 80);
@@ -120,9 +117,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60rem;
-    padding-left: 15rem;
-    
+    flex-wrap: wrap;   
 }
 
 .home-text{
@@ -130,6 +125,7 @@ header{
     text-align:center;
     margin: 2rem;
     line-height: 2rem;
+    width: 20rem;
 
 }
 .photo_1{ 
@@ -138,7 +134,98 @@ header{
     object-fit:cover;
     margin: 2rem;
     border-radius: 7px;
-   
+}
+
+@media only screen and (min-width:320px) and (max-width:767px) {
+    header {
+        flex-direction: column-reverse;
+        min-height: 45vh;
+        align-items: center;
+        position: sticky;  
+    }
+
+    nav{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .nav-superior a{
+        width: 7rem;
+        text-align: center;  
+        margin-left: 0;
+    }
+
+    .pages-titles1{
+        padding-top: 0;
+    }
+
+    .titles-home1{
+        padding-top: 0.5rem;
+    }
+
+    .content-home{
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+    }
+
+    .home-text{
+        margin:1rem;
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .photo_1{
+        margin-top: 2rem;
+        margin-bottom: 0rem;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px) {
+    header {
+        flex-direction: column-reverse;
+        min-height: 45vh;
+        align-items: center;
+        position: sticky;  
+    }
+
+    nav{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .nav-superior a{
+        width: 7rem;
+        text-align: center;  
+        margin-left: 0;
+    }
+
+    .titles-home1{
+        padding-top: 0.5rem;
+    }
+
+    .pages-titles1{
+        padding-top: 0;
+    }
+
+    .content-home{
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+    }
+
+    .home-text{
+        margin:1rem;
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .photo_1{
+        margin-top: 2rem;
+        margin-bottom: 0rem;
+    }
 }
 
 /*End of Home page
@@ -146,10 +233,11 @@ header{
         About Us Page - Beginning*/
 
         .main-au{
-            min-height: 100vh;
+            min-height: 94vh;
             text-align: center;
             background-color: black;
             display: flex;
+            flex-wrap: wrap;
             flex-direction: column;
             justify-content: center;
         }
@@ -157,6 +245,7 @@ header{
         .cards-au{
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
         }
         
         .au-content1 img{
@@ -177,14 +266,67 @@ header{
             line-height: 2rem;  
         }      
         
+        @media only screen and (min-width:320px) and (max-width:767px) {
+            .main-au{
+                width: 100%;
+            }
+            
+            
+            .pages-titles1{
+                margin-top: 0.5rem;  
+            }
         
+
+            .au-content1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0;
+            }
+
+            .au-content1 p{
+                padding: 0;
+                margin:0;
+                margin-bottom: 1rem;
+                width: 90%;
+            }
+
+        }
+
+        @media only screen and (min-width:768px) and (max-width:1023px) {
+            .main-au{
+                width: 100%;   
+            }
+            
+            
+            .pages-titles1{
+                margin-top: 0.5rem;
+                width: 90%;
+            }
+        
+
+            .au-content1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0;  
+            }
+
+            .au-content1 p{
+                padding: 0;
+                margin:0;
+                margin-bottom: 1rem;
+                width: 80%;
+            }
+
+        }
        
 /*End of About Us Page
 
         Contact Page - Beginning*/
        
         .main-contact{
-            min-height: 100vh;
+            min-height: 94vh;
             text-align: center;
             background-color: black;
             display: flex;
@@ -217,16 +359,58 @@ header{
             margin: 0rem auto;
             margin-top: 1.5rem;
             padding-bottom: 3rem;
+            display: flex;
+            justify-content: space-between;
           
         }
 
-        .mail{
-            float:left;
 
+        @media only screen and (min-width:320px) and (max-width:767px) {
+            .main-contact{
+                width: 100%;
+            }
+
+            .photo_5{
+                width: 80%;
+            }
+
+            .contact_content1 p{
+                width: 80%;
+            }
+
+            .contact_info{
+                flex-direction: column;
+                width: 80%;
+                gap: 1rem;
+            }
         }
 
-        .phone{
-            float: right;         
+        @media only screen and (min-width:768px) and (max-width:1023px) {
+            .main-contact{
+                width: 100%;
+            }
+
+            .pages-titles1{
+                width: 100%;
+            }
+
+            .pages-titles2{
+                width: 100%;
+            }
+
+            .photo_5{
+                width: 80%;
+            }
+
+            .contact_content1 p{
+                width: 80%;
+            }
+
+            .contact_info{
+                flex-direction: column;
+                width: 80%;
+                gap: 1rem;
+            }
         }
 
 /*End of Contact Page
@@ -268,27 +452,71 @@ header{
             background-color: rgb(202, 69, 46);
         }
 
+        @media only screen and (min-width:320px) and (max-width:767px) {
+           
+            .main-services {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .titles-services{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .pages-titles2{
+                width: 80%;
+
+            }
+
+            table{
+                width: 80%;
+                font-size: 13px;
+             }
+ 
+        }
+
+        @media only screen and (min-width:768px) and (max-width:1023px) {
+            .main-services {
+                width: 100%;
+            }
+
+            .titles-services{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .pages-titles2{
+                width: 100%;
+            }
+
+            table{
+                width: 80%;
+                font-size: 18px;
+             }
+        }
+
 /*End of Services Page
 
         Ratings - Beginning*/
 
         .main-r{
-            min-height: 100vh;
+            min-height: 94vh;
             text-align: center;
             background-color: black;
             display: flex;
             flex-direction: column;
-            align-items: center;
         }
-
-       
 
         .rating-1{
             color: rgb(232, 204, 255);
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
             align-items: center;
-            width: 40rem;
+            width: 100%;
             box-shadow: rgba(255, 255, 255, 0.1) 0px 10px 15px -3px, rgba(174, 171, 171, 0.05) 0px 4px 6px -2px;
             
         }
@@ -300,9 +528,9 @@ header{
 
         ol{
             line-height: 1.5rem;
-            text-align: left;
             width: 15rem;
-            align-items: center;
+            text-align: center;
+            list-style-position: inside;
         }
 
         .stars{
@@ -311,12 +539,72 @@ header{
             object-fit: cover;
         }
 
+        @media only screen and (min-width:320px) and (max-width:767px) {
+            .main-r{
+                width: 100%;
+                justify-content: center;
+            }
+
+            .rating-1{
+                flex-direction: column; 
+                width: 100%;
+                font-size: 15px;
+                margin-bottom: 1rem;                
+            }
+
+            .list-1{
+                width: 80%;
+                padding-left: 1rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .profile-pic{
+                width: 80%;
+            }
+            
+            ol{
+                width: 100%;
+                text-align: center;
+                list-style-position: inside;
+            }
+            
+            
+        }
+
+        @media only screen and (min-width:768px) and (max-width:1023px) {
+            .main-r{
+                width: 100%;
+                justify-content: center;
+            }
+
+            .rating-1{
+                flex-direction: column; 
+                width: 100%;
+            }
+
+            .list-1{
+                width: 80%;
+                padding-left: 1rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 1rem;
+            }
+            
+            ol{
+                width: 100%;
+                text-align: center;
+                list-style-position: inside;
+            }
+        }
 /*End of Ratings Page
 
         Hire - Beginning*/    
         
         .main-hire{
-            min-height: 93vh;
+            min-height: 94vh;
             text-align: center;
             background-color: black;
             display: flex;
@@ -355,7 +643,6 @@ header{
         }
 
         fieldset{
-            align-items: left;
             border: none;  
         }
 
@@ -370,5 +657,41 @@ header{
            width: 20rem; 
         }
 
+        @media only screen and (min-width:320px) and (max-width:767px) {
+            .main-hire{
+                width: 100%;
+            }
+
+            .content-hire{
+                flex-direction:column-reverse;
+                gap:0;
+            }
+
+            .form{
+                width: 90%;
+            }
+
+            textarea,.tw{
+                width: 90%;
+            }
+            
+        }
         
-    
+        @media only screen and (min-width:768px) and (max-width:1023px) {
+            .main-hire{
+                width: 100%;
+            }
+
+            .content-hire{
+                flex-direction:column-reverse;
+                gap:0;
+            }
+
+            .form{
+                width: 90%;
+            }
+
+            textarea,.tw{
+                width: 90%;
+            }    
+        }
